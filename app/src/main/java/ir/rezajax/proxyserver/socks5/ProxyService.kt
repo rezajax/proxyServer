@@ -7,11 +7,11 @@ import android.os.IBinder
 class ProxyService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         // راه‌اندازی TCP و UDP Server
-        val tcpServer = TcpServer(1080)
+        val tcpServer = TcpSocks5Server(1080)
         val udpServer = UdpServer(1080)
 
         tcpServer.start()
-        udpServer.start()
+//        udpServer.start()
 
         return START_STICKY
     }

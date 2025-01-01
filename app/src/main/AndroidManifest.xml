@@ -30,7 +30,7 @@
 
         </activity>
 
-        <service android:name=".socks5.ProxyService" android:enabled="true" android:exported="false" />
+<!--        <service android:name=".socks5.ProxyService" android:enabled="true" android:exported="false" />-->
 
     </application>
 
